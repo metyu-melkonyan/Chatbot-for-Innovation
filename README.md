@@ -1,6 +1,3 @@
-Below is a ready-to-paste **README.md** section for the repository you just shared. Feel free to tweak names, links, and badge URLs to match your GitHub handle and project details.
-
-````markdown
 # Chatbot-for-Innovation 🤖✨
 
 _A lightweight, retrieval-augmented chatbot that lets you “talk” to innovation
@@ -53,58 +50,20 @@ export OPENAI_API_KEY="sk-..."
 
 # 5. Launch notebook
 jupyter notebook Chatbot.ipynb
-````
+```
 
-Run the cells in order:
+## Example queries
 
-1. **Ingest** – point to your PDF(s) and build the vector store
-2. **Chat** – interact with the `qa_chain`
-3. **Publish (optional)** – execute the ngrok cell for a public link
-
-Re-opens of the notebook skip ingestion—your vectors stay in `./chroma_db`.
-
-### Example queries
-
-```text
 • What are Canada's main innovation challenges?
 • How could Canada better compete with China and the U.S. in AI R&D?
 • Why does the report suggest embedding SR&ED consultants in innovation hubs?
-```
 
----
 
-## Repository layout
 
-```
 Chatbot-for-Innovation/
 ├── Chatbot.ipynb     ← main notebook (ingestion + chat)
 ├── analysis.ipynb    ← sample data-exploration notebook
 ├── chroma_db/        ← generated at runtime (persistent vectors)
 └── requirements.txt  ← pinned dependencies
-```
 
----
 
-## Extending the bot
-
-| Goal                              | Where to start                                                 |
-| --------------------------------- | -------------------------------------------------------------- |
-| Index more file types (HTML, CSV) | Add extraction helpers in **Chatbot.ipynb** before the chunker |
-| Turn notebook into an API         | Wrap the chain in **FastAPI** or **LangServe**                 |
-| Custom front-end                  | Connect with **Streamlit**, **React**, or **Langflow**         |
-| Multi-model support               | Swap `ChatOpenAI` for Anthropic or local LLMs via LangChain    |
-
-Pull requests and feature suggestions are very welcome—see
-`CONTRIBUTING.md` for style guidelines.
-
----
-
-## License
-
-[MIT](LICENSE) © 2025 Your Name
-
-```
-
-Copy this block into `README.md`, push, and your GitHub repo will have a crisp,
-comprehensive introduction for contributors and users alike. 🚀
-```
