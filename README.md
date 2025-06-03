@@ -4,7 +4,6 @@ _A lightweight, retrieval-augmented chatbot that lets you “talk” to innovati
 reports and datasets._
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ## What it does
 This notebook-driven project turns any PDF (and easily extensible data sources)
